@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduction</title>
+<style type="text/css">
+		ul{
+			list-style: none;
+			padding:0;
+			overflow:hidden;
+			display:table;
+			height:auto;
+			margin:0 auto;
+		}
+		ul li{
+			float: left;
+		}
+		a{
+			color: #fff;
+			width: 120px;
+			padding: 10px;
+			background: #bebebe;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+			display: block;
+		}
+		a:hover{
+			background: red;
+		}
+		.one{
+			width:800px;
+			alignment-adjust:central;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			border:2px double #6699CC;
+			border-radius:15px;
+			-webkit-transform: translate(-50%, 0%);
+			-moz-transform: translate(-50%, 0%);
+			-ms-transform: translate(-50%, 0%);
+			-o-transform: translate(-50%, 0%);
+			transform: translate(-50%, 0%);
+			padding:20px;
+			border:hidden;
+
+		}
+		ul li ul{
+			display: none;
+		}
+		ul li ul li{
+			float: none;
+			list-style: none;
+			margin-top: 2px;
+		}
+		ul li ul li a:hover{
+			background: #06f;
+		}
+		ul li:hover ul{
+			display: block;
+		}
+	</style>
+</head>
+<style>
+li
+{
+display:inline;
+}
+a:link,a:visited
+{
+font-weight:bold;
+color:#FFFFFF;
+background-color: #069;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform: none;
+}
+a:hover,a:active
+{
+background-color:#7A991A;
+}
+
+
+.one{
+	width:800px;
+	alignment-adjust:central;
+	position: absolute;
+    top: 0%;
+    left: 50%;
+	border:2px double #6699CC;
+	border-radius:15px;
+	-webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+	padding:20px;
+	border:hidden;
+
+}
+.content{
+	text-align:left;
+	width:auto;
+	border-radius:15px;
+	border: 2px solid #069;
+	padding:20px; 
+}
+</style>
+<body>
+<div class="one">
+<img src="logo.jpg" width="500" height="148" alt="logo" />
+<hr />
+<div class="ref">
+<ul>
+<li><a href="introduction.html" >Introduction</a></li>
+<li><a href="home.html" >Server</a></li>
+<li><a href="code.html">Code and Data</a></li>
+<li><a href="contact.html" >Contact</a></li>
+</ul>
+</div>
+<br />
+<div class="content">
+<p>
+The localization information of RNAs in cell can provide important insights into biological
+functions. There is a great deal of research that subcellular localization has been demonstrated to be a
+fundamental regulation mode in cells. Considering expensive and inconvenient biological experiments,
+automatic computational tools are highly desired to speed up RNA-related subcellular localization studies.
+However, most existing RNA subcellular localization classifiers only solve the problem of single-label
+classification. In fact, a single RNAs sequence often surrounds multiple proteins. Therefore, it is of great
+practical significance to expand into the multi-label classification problem. In this study, we extract different types of RNA-associated subcellular localization multi-label datasets on four RNA categories, and construct RNA subcellular localization datasets. In order to study subcellular localization for Homo sapiens, we establish human RNA subcellular localization datasets.
+Furthermore, we utilize different nucleotide property composition models to extract effective features to adequately represent the important information of nucleotide sequences. In the most critical part, we achieve a major challenge is to fuse the multivariate information through multiple kernel learning based on Hilbert-Schmidt independence criterion, and put the optimal combined kernel into an integration support vector machine model for training a multi-label RNA subcellular localization classifier. To be specific, our
+novel method outperforms outstanding rather than other tools in most respects on our novel benchmark datasets. The flowchart is shown in the figure 1.
+<p>
+This web server develops for RNAs subcelluar prediction. The predictor covers the following 4 types of RNAs: (1) mRNA, (2) lncRNA, (3) miRNA, (4) snoRNA.
+
+</p>
+<div class="image" align="center">
+ <img src="flow.png" alt="flow" width="499" height="220"/>  
+<p>Fig.1. Flowchart of the whole prediction process.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

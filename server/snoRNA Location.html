@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Server</title>
+<style type="text/css">
+		ul{
+			list-style: none;
+			padding:0;
+			overflow:hidden;
+			display:table;
+			height:auto;
+			margin:0 auto;
+		}
+		ul li{
+			float: left;
+		}
+		a{
+			color: #fff;
+			width: 120px;
+			padding: 10px;
+			background: #bebebe;
+			text-decoration: none;
+			text-align: center;
+			font-weight: bold;
+			display: block;
+		}
+		a:hover{
+			background: red;
+		}
+		.one{
+			width:800px;
+			alignment-adjust:central;
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			border:2px double #6699CC;
+			border-radius:15px;
+			-webkit-transform: translate(-50%, 0%);
+			-moz-transform: translate(-50%, 0%);
+			-ms-transform: translate(-50%, 0%);
+			-o-transform: translate(-50%, 0%);
+			transform: translate(-50%, 0%);
+			padding:20px;
+			border:hidden;
+
+		}
+		.email{
+			font-size:17px;
+			width:auto;
+			text-align:left;
+			border-radius:15px;
+			border: 2px solid gray;
+			padding:10px; 
+		}
+		.input{
+			font-size:17px;
+			text-align:left;
+			width:auto;
+			border-radius:15px;
+			border: 2px solid gray;
+			padding:10px; 
+		}
+		ul li ul{
+			display: none;
+		}
+		ul li ul li{
+			float: none;
+			list-style: none;
+			margin-top: 2px;
+		}
+		ul li ul li a:hover{
+			background: #06f;
+		}
+		ul li:hover ul{
+			display: block;
+		}
+	</style>
+</head>
+<style>
+li
+{
+display:inline;
+}
+a:link,a:visited
+{
+font-weight:bold;
+color:#FFFFFF;
+background-color: #069;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform: none;
+}
+a:hover,a:active
+{
+background-color:#7A991A;
+}
+
+
+.one{
+	width:800px;
+	alignment-adjust:central;
+	position: absolute;
+    top: 0%;
+    left: 50%;
+	border:2px double #6699CC;
+	border-radius:15px;
+	-webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+	padding:20px;
+	border:hidden;
+
+}
+.input{
+	font-size:17px;
+	text-align:left;
+	width:auto;
+	border-radius:15px;
+	border: 2px solid gray;
+	padding:10px; 
+}
+.content{
+	text-align:left;
+	width:auto;
+	border-radius:15px;
+	border: 2px solid #069;
+	padding:20px; 
+}
+.email{
+	font-size:17px;
+	width:auto;
+	text-align:left;
+	border-radius:15px;
+	border: 2px solid gray;
+	padding:10px; 
+}
+</style>
+<body>
+<div class="one">
+<img src="logo.jpg" width="500" height="148" alt="logo" />
+<hr />
+<form id="form1" name="form1" method="post" action="">
+  <div class="ref">
+<ul>
+<li><a href="introduction.html" >Introduction</a></li>
+<li><a href="home.html" >Server</a></li>
+<li><a href="code.html">Code and Data</a></li>
+<li><a href="contact.html" >Contact</a></li>
+</ul>
+</div>
+<br />
+<div class="content">
+<div class="input" >
+<h3> Input snoRNAs sequences:</h3>
+  <p>Please input your snoRNAs sequence in fasta format: <li><a href="snoRNA_example.html" >example</a></li> <br />
+  
+   <textarea  name="sequence" cols="50" rows="5" id="sequence" style="border:1px solid #666" ></textarea>
+   <br /><br />
+Or upload a fasta file: <br />
+    <label for="textfield"></label>
+    <input name="filename" type="text" id="filename" value="" size="39" style="height:25px;border:1px solid #666"/>
+    <input type="submit" name="Choose file" id="Choose file" value="Choose file" style="height:30px" />
+    </p>
+  </div>
+  <hr>
+  
+  <hr />
+  <div class="email">
+  <p>E-mail:
+    <label for="email"></label>
+    <input type="text" name="email" id="email" style="height:25px;width:318px;border:1px solid #666"/>
+  </p>
+   <p>
+      <input type="submit" name="submit" id="submit" value="Submit"  style="height:25px;width:190px"/>
+      <input type="submit" name="reset" id="reset" value="Reset" style="height:25px;width:190px"/>
+    </p>
+  </div>
+  <div class="refer" style="font-size:17px">
+  
+  <p>&nbsp; </p>
+  <p>   </p>
+  </div>
+  </div>
+</form>
+</div>
+</body>
+</html>
